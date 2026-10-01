@@ -4,7 +4,7 @@ This project is a Spring Boot application built with Java.
 
 ## Environment Details
 - **Java Version:** 17
-- **Spring Boot Version:** 4.11
+- **Spring Boot Version:** 4.1.1
 
 ## Dependencies
 The project utilizes the following dependencies:

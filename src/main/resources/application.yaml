@@ -1,3 +1,23 @@
 spring:
   application:
     name: Store
+
+  # Database Information
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  # Hibernate ORM Configuration
+  jpa:
+    hibernate:
+      ddl-auto: update # update DB with DDL
+    show-sql: true # shows what query is actually done in the background
+    properties:
+      hibernate:
+        format_sql: true
+
+
+server:
+  port: ${PORT:8085}  # Uses PORT from .env, defaults to 8085 if not set
